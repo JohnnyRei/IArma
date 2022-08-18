@@ -6,6 +6,6 @@ Esse projeto conclui a detecção automática de armas de fogo em imagens com us
 <img src="https://www.scylla.ai/static/f78629c26ee2aaaf681abaa891228f75/e0815/scylla-object-detection.png"/>
 </p>
 
-<p align="left">
+<p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
