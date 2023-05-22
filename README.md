@@ -1,30 +1,28 @@
-## 💡Project IArma 
+# Project IArma
 
-This project aims to achieve automatic detection of firearms in images using Artificial Intelligence. Individuals carrying firearms in public places are strong indicators of a dangerous situation. Studies have shown that a quick response from authorities is the primary factor in reducing the number of victims. One way to ensure the authorities can act swiftly is through early detection of potentially dangerous situations, with an emphasis on the use of security cameras, closed-circuit television (CCTV), and real-time video. However, the large number of cameras to be monitored leads to overload for CCTV operators, resulting in fatigue and stress, consequently reducing surveillance efficiency. Deep learning neural networks have proven to be efficient in detecting and identifying objects in images, often producing more precise and consistent results than human counterparts.
+![IArma Logo](https://www.scylla.ai/static/f78629c26ee2aaaf681abaa891228f75/e0815/scylla-object-detection.png)
 
-<p align="center">
-<img src="https://www.scylla.ai/static/f78629c26ee2aaaf681abaa891228f75/e0815/scylla-object-detection.png"/>
-</p>
+This project aims to achieve automatic detection of firearms in images using Artificial Intelligence. The detection of individuals carrying firearms in public places can be a strong indicator of a dangerous situation. Quick response from authorities has been proven to be the primary factor in reducing the number of victims. To ensure swift action, early detection of potentially dangerous situations is crucial, with a focus on utilizing security cameras, closed-circuit television (CCTV), and real-time video. However, the sheer number of cameras to be monitored often overwhelms CCTV operators, leading to fatigue and stress, which in turn reduces surveillance efficiency. Deep learning neural networks have proven to be efficient in detecting and identifying objects in images, often producing more precise and consistent results than human counterparts.
 
-# Convolutional Neural Networks (CNNs)
+## Convolutional Neural Networks (CNNs)
 
 Convolutional Neural Networks (CNNs) are a type of deep learning model widely used for image processing and computer vision tasks. They are specifically designed to effectively process and analyze visual data.
 
 ## Architecture
 
-A CNN consists of multiple layers, each performing a specific operation on the input data. The main layers in a typical CNN architecture are:
+A CNN consists of multiple layers, each performing a specific operation on the input data. The main layers in a typical CNN architecture are as follows:
 
-1. **Input Layer**: This layer represents the initial input data, usually an image, which is represented as a grid of pixels.
+1. **Input Layer**: Represents the initial input data, usually an image, which is represented as a grid of pixels.
 
-2. **Convolutional Layer**: In this layer, a set of learnable filters, also known as convolutional kernels, are applied to the input image. Each filter performs a convolution operation, which involves sliding over the input image and computing dot products between the filter weights and the corresponding pixel values. The convolution operation extracts local features from the image.
+2. **Convolutional Layer**: Applies a set of learnable filters (convolutional kernels) to the input image. Each filter performs a convolution operation, extracting local features from the image.
 
-3. **Activation Layer**: Following each convolutional layer, an activation function such as ReLU (Rectified Linear Unit) is applied element-wise to introduce non-linearity. This allows the network to learn complex patterns and relationships in the data.
+3. **Activation Layer**: Applies an activation function (e.g., ReLU) element-wise after each convolutional layer to introduce non-linearity and enable the network to learn complex patterns and relationships in the data.
 
-4. **Pooling Layer**: Pooling layers downsample the feature maps obtained from the previous layers, reducing their spatial dimensionality while preserving important information. Common pooling techniques include max pooling and average pooling.
+4. **Pooling Layer**: Downsamples the feature maps obtained from the previous layers, reducing spatial dimensionality while preserving important information. Common pooling techniques include max pooling and average pooling.
 
-5. **Fully Connected Layer**: After several convolutional and pooling layers, the outputs are flattened into a vector and fed into a fully connected layer, also known as a dense layer. This layer connects every neuron from the previous layer to the next, performing classification or regression tasks.
+5. **Fully Connected Layer**: Flattens the outputs from previous layers into a vector and feeds it into a fully connected layer (dense layer). This layer connects every neuron from the previous layer to the next, performing classification or regression tasks.
 
-6. **Output Layer**: The final layer of the CNN produces the desired output based on the problem being solved. For example, in image classification tasks, the output layer typically employs softmax activation to generate class probabilities.
+6. **Output Layer**: Produces the desired output based on the problem being solved. In image classification tasks, the output layer typically employs softmax activation to generate class probabilities.
 
 ## Key Concepts
 
@@ -53,7 +51,9 @@ CNNs have achieved remarkable success in various computer vision tasks, includin
 - Semantic segmentation
 - Face recognition
 - Style transfer
-- Medical image analysis
+- Medical
+
+ image analysis
 
 The hierarchical and adaptive nature of CNNs allows them to learn and extract increasingly complex features from visual data, making them a powerful tool for a wide range of image-related problems.
 
