@@ -11,13 +11,13 @@
 This repository contains code for a Convolutional Neural Network (CNN) model designed to detect guns in random images. The model is trained using deep learning techniques and leverages the power of CNNs to achieve accurate gun recognition.
 
 ## Dataset
-To train the CNN model, a dataset of random images containing both gun and non-gun images was collected. The dataset was carefully curated to ensure a diverse range of images, including different gun types, backgrounds, lighting conditions, and angles. The dataset was then labeled with corresponding class labels (gun or non-gun) to facilitate supervised learning.
+To train the CNN model, a dataset of random images containing both gun and random images was collected. The dataset was carefully curated to ensure a diverse range of images, including different gun types, backgrounds, lighting conditions, and angles. The dataset was then labeled with corresponding class labels (gun or random) to facilitate supervised learning.
 
 ## Model Architecture
 The CNN model architecture used for gun recognition consists of multiple convolutional layers, pooling layers, and fully connected layers. This architecture is designed to capture important features and patterns in the images while maintaining spatial information. The exact architecture and hyperparameters used can be found in the code files.
 
 ## Training
-The training process involves feeding the labeled dataset into the CNN model and optimizing its parameters through backpropagation. The loss function used is typically a binary cross-entropy loss, given the binary classification task (gun or non-gun). The model is trained iteratively over multiple epochs until convergence or a predefined stopping criterion.
+The training process involves feeding the labeled dataset into the CNN model and optimizing its parameters through backpropagation. The loss function used is typically a binary cross-entropy loss, given the binary classification task (gun or random). The model is trained iteratively over multiple epochs until convergence or a predefined stopping criterion.
 
 ## Evaluation
 To evaluate the performance of the trained CNN model, a separate test set comprising unseen images is used. The model's predictions are compared against the ground truth labels, and various evaluation metrics such as accuracy, precision, recall, and F1-score are computed. These metrics provide insights into the model's ability to correctly classify images as containing guns or not.
