@@ -28,7 +28,7 @@ To use the trained CNN model for gun recognition on new images, follow these ste
 2. Ensure that all the necessary dependencies and libraries are installed.
 3. Preprocess your images, if required, to match the input format expected by the model.
 4. Load the trained model weights using the provided files or by training your own model.
-5. Pass the preprocessed image(s) through the model and obtain the predicted class label(s) (gun or non-gun).
+5. Pass the preprocessed image(s) through the model and obtain the predicted class label(s) (gun or random).
 6. Optionally, you can visualize the results or integrate the model into your own applications.
 
 ## Results and Limitations
