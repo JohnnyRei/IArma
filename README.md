@@ -1,62 +1,49 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=FF322C&width=435&lines=IArma" alt="Typing SVG" /></a>
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=FF322C&width=435&lines=IArma" alt="Typing SVG" />
+  </a>
+</p>
 
 ![IArma Logo](https://www.scylla.ai/static/f78629c26ee2aaaf681abaa891228f75/e0815/scylla-object-detection.png)
 
-This project aims to achieve automatic detection of firearms in images using Artificial Intelligence. The detection of individuals carrying firearms in public places can be a strong indicator of a dangerous situation. Quick response from authorities has been proven to be the primary factor in reducing the number of victims. To ensure swift action, early detection of potentially dangerous situations is crucial, with a focus on utilizing security cameras, closed-circuit television (CCTV), and real-time video. However, the sheer number of cameras to be monitored often overwhelms CCTV operators, leading to fatigue and stress, which in turn reduces surveillance efficiency. Deep learning neural networks have proven to be efficient in detecting and identifying objects in images, often producing more precise and consistent results than human counterparts.
+# Convolutional Neural Network for Gun Detection in Random Images
 
-## Convolutional Neural Networks (CNNs)
+This repository contains code for a Convolutional Neural Network (CNN) model designed to detect guns in random images. The model is trained using deep learning techniques and leverages the power of CNNs to achieve accurate gun recognition.
 
-Convolutional Neural Networks (CNNs) are a type of deep learning model widely used for image processing and computer vision tasks. They are specifically designed to effectively process and analyze visual data.
+## Dataset
+To train the CNN model, a dataset of random images containing both gun and non-gun images was collected. The dataset was carefully curated to ensure a diverse range of images, including different gun types, backgrounds, lighting conditions, and angles. The dataset was then labeled with corresponding class labels (gun or non-gun) to facilitate supervised learning.
 
-## Architecture
+## Model Architecture
+The CNN model architecture used for gun recognition consists of multiple convolutional layers, pooling layers, and fully connected layers. This architecture is designed to capture important features and patterns in the images while maintaining spatial information. The exact architecture and hyperparameters used can be found in the code files.
 
-A CNN consists of multiple layers, each performing a specific operation on the input data. The main layers in a typical CNN architecture are as follows:
+## Training
+The training process involves feeding the labeled dataset into the CNN model and optimizing its parameters through backpropagation. The loss function used is typically a binary cross-entropy loss, given the binary classification task (gun or non-gun). The model is trained iteratively over multiple epochs until convergence or a predefined stopping criterion.
 
-1. **Input Layer**: Represents the initial input data, usually an image, which is represented as a grid of pixels.
+## Evaluation
+To evaluate the performance of the trained CNN model, a separate test set comprising unseen images is used. The model's predictions are compared against the ground truth labels, and various evaluation metrics such as accuracy, precision, recall, and F1-score are computed. These metrics provide insights into the model's ability to correctly classify images as containing guns or not.
 
-2. **Convolutional Layer**: Applies a set of learnable filters (convolutional kernels) to the input image. Each filter performs a convolution operation, extracting local features from the image.
+## Usage
+To use the trained CNN model for gun recognition on new images, follow these steps:
+1. Clone this repository and navigate to the project directory.
+2. Ensure that all the necessary dependencies and libraries are installed.
+3. Preprocess your images, if required, to match the input format expected by the model.
+4. Load the trained model weights using the provided files or by training your own model.
+5. Pass the preprocessed image(s) through the model and obtain the predicted class label(s) (gun or non-gun).
+6. Optionally, you can visualize the results or integrate the model into your own applications.
 
-3. **Activation Layer**: Applies an activation function (e.g., ReLU) element-wise after each convolutional layer to introduce non-linearity and enable the network to learn complex patterns and relationships in the data.
+## Results and Limitations
+The performance of the CNN model for gun detection can vary depending on factors such as the quality of the dataset, model architecture, training parameters, and image characteristics. It is essential to consider the limitations of the model, including its potential for false positives or false negatives, especially in complex or ambiguous image scenarios. Regular model evaluation and fine-tuning may be necessary to achieve optimal results.
 
-4. **Pooling Layer**: Downsamples the feature maps obtained from the previous layers, reducing spatial dimensionality while preserving important information. Common pooling techniques include max pooling and average pooling.
+## Future Improvements
+This project can be further improved in several ways:
+- Increasing the size and diversity of the training dataset to enhance the model's ability to generalize to unseen images.
+- Exploring different CNN architectures or incorporating pre-trained models for feature extraction.
+- Employing data augmentation techniques to artificially increase the training dataset and improve model robustness.
+- Incorporating post-processing steps to refine the model's predictions and reduce false positives or negatives.
+- Continuously monitoring and updating the model to adapt to emerging trends, new gun types, or changes in image characteristics.
 
-5. **Fully Connected Layer**: Flattens the outputs from previous layers into a vector and feeds it into a fully connected layer (dense layer). This layer connects every neuron from the previous layer to the next, performing classification or regression tasks.
+## Contributions
+Contributions to this project are welcome. If you have any suggestions, bug fixes, or additional features, please submit a pull request or open an issue.
 
-6. **Output Layer**: Produces the desired output based on the problem being solved. In image classification tasks, the output layer typically employs softmax activation to generate class probabilities.
-
-## Key Concepts
-
-### Local Receptive Fields
-
-CNNs utilize local receptive fields, where each neuron in a layer is connected to a small region of the previous layer. This local connectivity allows the network to focus on local patterns and relationships within the input data.
-
-### Parameter Sharing
-
-CNNs take advantage of parameter sharing, meaning that the same set of filter weights is applied to different regions of the input. This significantly reduces the number of parameters compared to fully connected networks and enables the network to learn translation-invariant features.
-
-### Convolution and Pooling
-
-Convolutional layers perform convolutions by sliding the filters over the input data and computing dot products. Pooling layers downsample the feature maps by selecting the maximum value (max pooling) or calculating the average value (average pooling) within a specific window.
-
-### Learning and Optimization
-
-CNNs are trained using a process called backpropagation, where the error between the predicted output and the true output is propagated back through the network. Optimization algorithms like gradient descent are then used to update the weights and biases of the network, minimizing the error and improving its performance.
-
-## Applications
-
-CNNs have achieved remarkable success in various computer vision tasks, including:
-
-- Image classification
-- Object detection and localization
-- Semantic segmentation
-- Face recognition
-- Style transfer
-- Medical
-
- image analysis
-
-The hierarchical and adaptive nature of CNNs allows them to learn and extract increasingly complex features from visual data, making them a powerful tool for a wide range of image-related problems.
-
-## Conclusion
-
-Convolutional Neural Networks have revolutionized the field of computer vision by effectively capturing and analyzing visual information. Their ability to learn and extract relevant features from images has made them a cornerstone of many state-of-the-art image processing systems. By leveraging local receptive fields, parameter sharing, and various layers, CNNs excel at solving complex visual tasks and continue to push the boundaries of what is possible in the realm of computer vision.
+## License
+This project is licensed under the [MIT License](LICENSE).
