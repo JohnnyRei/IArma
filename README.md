@@ -1,10 +1,9 @@
-<p align="center">
+<p align="right">
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=FF322C&width=435&lines=IArma project" alt="Typing SVG" />
+     <img src="image.png"  alt="IArma Logo" width="4000"/>
   </a>
 </p>
-
-![IArma Logo](https://www.scylla.ai/static/f78629c26ee2aaaf681abaa891228f75/e0815/scylla-object-detection.png)
 
 # Convolutional Neural Network for Gun Detection in Random Images
 
