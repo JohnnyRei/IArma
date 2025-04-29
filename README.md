@@ -1,10 +1,3 @@
-<p align="right">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=FF322C&width=435&lines=IArma project" alt="Typing SVG" />
-     <img src="image.png"  alt="IArma Logo" width="4000"/>
-  </a>
-</p>
-
 # Convolutional Neural Network for Gun Detection in Random Images
 
 This repository contains code for a Convolutional Neural Network (CNN) model designed to detect guns in random images. The model is trained using deep learning techniques and leverages the power of CNNs to achieve accurate gun recognition.
